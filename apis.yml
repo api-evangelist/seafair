@@ -1,7 +1,27 @@
 aid: seafair
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/seafair.png
 name: Seafair
-description: Seafair is a company surfaced as a portfolio company of speedinvest and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Seafair is an AI-native ERP platform for maritime operations, unifying crew
+  management, HSQE and regulatory compliance, technical maintenance (planned
+  maintenance systems and defect tracking), and accounting into a single system
+  for shipping companies and ship managers. Its AI compliance engine performs
+  document search and framework reviews (such as DryBMS and TMSA) and embeds AI
+  assistance directly into operational workflows. Seafair markets itself as
+  API-first with fast ERP integrations, but does not currently publish a public
+  developer portal, API reference, SDKs, or OpenAPI definition. Seafair is a
+  portfolio company of Speedinvest and is tracked in the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/seafair/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,30 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Maritime
+- Shipping
+- ERP
+- Compliance
+- Crew Management
+- Artificial Intelligence
 apis: []
+common:
+- type: DomainSecurity
+  url: security/seafair-domain-security.yml
+- type: Website
+  url: https://www.seafair.io
+- type: PrivacyPolicy
+  url: https://drive.google.com/file/d/16xuCzX9IviegK8Tj8PcIYiUjhAVNweLC/view?usp=drive_link
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
